@@ -1,5 +1,4 @@
 FROM ubuntu:22.04
-#non silicon? ubuntu:22.10
 
 USER root
 
