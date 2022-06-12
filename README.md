@@ -10,7 +10,9 @@ Maps this repo folder into Docker so you can create and save notebooks and then 
 `bash go.sh`
 
 ### Stop container 
-`docker stop base_python`
+`bash stop.sh`  
+(OR: `docker stop base_python`)
+note: each time you run `bash go.sh`, it will stop the container that is currently running, so be careful if you havent saved changes in notebooks.
 
 ### Remove all stopped containers
 `docker container rm $(docker ps -aq)`
