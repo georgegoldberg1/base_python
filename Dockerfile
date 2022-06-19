@@ -1,5 +1,5 @@
 FROM ubuntu:22.04
-
+# can add --platform linux/amd64 after FROM to run under emulation
 USER root
 
 RUN apt update && apt-get update \
