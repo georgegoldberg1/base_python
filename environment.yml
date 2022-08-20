@@ -1,0 +1,53 @@
+#conda env create -f environment.yml
+#conda environment for python
+
+name: env_pymc
+channels:
+    - conda-forge
+    - defaults
+dependencies:
+    - python=3.10
+    - pip
+    - jupyter
+
+    #ReadingData
+    - lxml
+    - xlrd
+    - xlsxwriter
+    - fastparquet
+    - pyarrow
+
+    #WebScraping
+    - requests
+    - beautifulsoup4
+
+    #DataScience
+    - numpy
+    - pandas
+    - scipy
+    - statsmodels
+    - scikit-learn
+    - nltk
+
+    #BayesianModelling
+    - pymc3
+    - arviz
+    
+    #DataViz
+    - matplotlib
+    - seaborn
+    - plotly
+    - dash
+
+    #AppBased
+    - pip:
+        - jupyter-dash
+    - flask
+
+    #Powerpoint
+    - pillow
+    - pip:
+        - python-pptx
+
+#to refresh the packages in this environment, run :
+#conda env update --prefix ./env --file environment.yml  --prune
